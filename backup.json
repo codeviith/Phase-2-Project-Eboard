@@ -1,0 +1,74 @@
+{
+  "eboards": [
+    {
+      "id": 1,
+      "image": "./pics/ID1.jpg",
+      "battery": "10s3p",
+      "motor": "5364 190kv",
+      "gear_ratio": "15-36",
+      "top_speed": "22",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 2,
+      "image": "./pics/ID2.jpeg",
+      "battery": "12s3p",
+      "motor": "5364 190kv",
+      "gear_ratio": "15-38",
+      "top_speed": "30",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 3,
+      "image": "./pics/ID3.jpg",
+      "battery": "10s2p",
+      "motor": "6355 210kv",
+      "gear_ratio": "15-48",
+      "top_speed": "18",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 4,
+      "image": "./pics/ID4.jpeg",
+      "battery": "12s4p",
+      "motor": "6364 190kv",
+      "gear_ratio": "14-56",
+      "top_speed": "28",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 5,
+      "image": "./pics/ID5.jpeg",
+      "battery": "12s3p",
+      "motor": "6374 190kv",
+      "gear_ratio": "15-58",
+      "top_speed": "27",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 6,
+      "image": "./pics/ID6.jpeg",
+      "battery": "12s3p",
+      "motor": "6384 170kv",
+      "gear_ratio": "direct",
+      "top_speed": "32",
+      "likes": 0,
+      "comment": []
+    },
+    {
+      "id": 7,
+      "image": "./pics/ID7.jpg",
+      "battery": "10s8p",
+      "motor": "6364 190kv",
+      "gear_ratio": "15-58",
+      "top_speed": "25",
+      "likes": 0,
+      "comment": []
+    }
+  ]
+}

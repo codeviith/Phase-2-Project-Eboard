@@ -1,0 +1,71 @@
+.background-img:before{
+  z-index:-1;
+  position:fixed;
+  /* left: 245px; */
+  content: url("/public/pics/backdrop.jpg");
+  opacity:0.45;
+}
+
+.header {
+  text-align: center;
+  background-color: orangered;
+  font-size: x-large;
+  padding: 2px;
+}
+
+.search-bar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: center;
+}
+
+#search {
+  width: 75%;
+  position: relative;
+  display: flex;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+}
+
+@media (min-width: 900px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post {
+    width: calc(35% - 2rem);
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 450px;
+  height: 320px;
+  /* background-size: 450px 320px; */
+  margin: 15px;
+}
+
+li {
+  font-size: 25px;
+  font-style: oblique;
+  font-family: Comic Sans MS;
+}
+
+.submit_button {
+  margin-left: 0;
+}
+
+.new-eboard-input input {
+  display: flex;
+  width: 45%;
+  padding: 10px 12px;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+}
+
+
