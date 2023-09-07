@@ -35,6 +35,10 @@ function EboardPost({eboard, deletePost, URL}) {
         }).then(data => data.json())
         .then(newObj => setComments(newObj.comment))
         
+        return resetCommentInput(e);
+    }
+
+    function resetCommentInput(e) {
         e.target.reset();
     }
 

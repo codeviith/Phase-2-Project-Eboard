@@ -1,13 +1,12 @@
 body {
-  /* z-index:-1; */
-  /* position:fixed; */
-  /* left: 245px; */
-  /* background-position: center; */
   background-image: linear-gradient(to right, rgba(255,255,255,0.45) 0 100%), url("/public/pics/backdrop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  /* opacity:0.45; */
+  background-size: contain;
+  background-color: gray;
+  
+  /* rgb(59, 184, 212); */
 }
 
 .header {
@@ -15,22 +14,6 @@ body {
   background-color: orangered;
   font-size: x-large;
   padding: 2px;
-}
-
-.search-bar {
-  /* padding: 0.5rem; */
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-}
-
-#search {
-  /* width: 100%;
-  position: relative; */
-  /* display: block; */
-  font-size: 35px;
-  font-family: Comic Sans MS;
 }
 
 @media (min-width: 900px) {
@@ -74,11 +57,6 @@ li {
   font-family: Comic Sans MS;
 }
 
-
-
-
-
-
 nav {
   display: flex;
   justify-content: center;
@@ -101,7 +79,6 @@ a:hover {
   color: gray;
 }
 
-
 .specs {
   display: flex;
   flex-direction: column;
@@ -115,7 +92,6 @@ p {
   margin: 0; /*!important: this is to give this code priority over other <p> tags*/
 }
 
-
 .displayed-comments {
   font-size: 20px;
   font-family: Comic Sans MS;
@@ -123,29 +99,30 @@ p {
   text-decoration: underline;
 }
 
-
-
-
-/* ul {
-  list-style-type: none;
-  margin: center center;
-  padding: 5px;
-  overflow: hidden;
+.intro {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: #656565;
+  font-size: 30px;
+  font-style: Calibri;
+  background-color: gray;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  float: left;
+
+.search-bar {
+  background-color: gray;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  border: 0;
 }
 
-/* Change the link color to #111 (black) on hover */
-/* li a:hover {
-  background-color: #111;
-} */
+.search-input {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  width: 90vw;
+}
+
 

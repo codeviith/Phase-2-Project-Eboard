@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import EboardsList from "./EboardsList";
 import NewEboardsForm from "./NewEboardsForm";
 import Search from "./Search";
+import Intro from "./Intro";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 
@@ -66,6 +67,7 @@ function EboardsPage() {
             <NavBar/>
             <Switch>
                 <Route exact path="/">
+                    <Intro />
                     <EboardsList eboards={eboards}
                     deletePost={deletePost}
                     URL={URL}

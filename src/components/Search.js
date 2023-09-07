@@ -3,9 +3,10 @@ import React from "react";
 function Search({query, updateQuery}) {
     return (
         <div className="search-bar">
-            <label htmlFor="Search"></label>
-            <h3>Search</h3>
-            <input type="text" id="search-input"
+            <label htmlFor="Search">
+                <h3>Search</h3>
+            </label>
+            <input type="text" className="search-input"
             placeholder="Search Eboard Here By Spec..."
             onChange={updateQuery}
             value={query}
