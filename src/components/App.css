@@ -1,9 +1,13 @@
-.background-img:before{
-  z-index:-1;
-  position:fixed;
+body {
+  /* z-index:-1; */
+  /* position:fixed; */
   /* left: 245px; */
-  content: url("/public/pics/backdrop.jpg");
-  opacity:0.45;
+  /* background-position: center; */
+  background-image: linear-gradient(to right, rgba(255,255,255,0.45) 0 100%), url("/public/pics/backdrop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* opacity:0.45; */
 }
 
 .header {
@@ -14,16 +18,18 @@
 }
 
 .search-bar {
-  padding: 1rem;
+  /* padding: 0.5rem; */
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 }
 
 #search {
-  width: 75%;
-  position: relative;
-  display: flex;
-  font-size: 25px;
+  /* width: 100%;
+  position: relative; */
+  /* display: block; */
+  font-size: 35px;
   font-family: Comic Sans MS;
 }
 
@@ -68,4 +74,78 @@ li {
   font-family: Comic Sans MS;
 }
 
+
+
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: gray;
+}
+
+a {
+  display:block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+  color: gray;
+}
+
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1px; */
+  font-size: 25px;
+  font-family: Comic Sans MS;
+}
+
+p {
+  margin: 0; /*!important: this is to give this code priority over other <p> tags*/
+}
+
+
+.displayed-comments {
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  display:flex;
+  text-decoration: underline;
+}
+
+
+
+
+/* ul {
+  list-style-type: none;
+  margin: center center;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #656565;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  float: left;
+}
+
+/* Change the link color to #111 (black) on hover */
+/* li a:hover {
+  background-color: #111;
+} */
 

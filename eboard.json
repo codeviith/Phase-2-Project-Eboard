@@ -8,7 +8,10 @@
       "gear_ratio": "15-36",
       "top_speed": "22",
       "likes": 0,
-      "comment": []
+      "comment": [
+        "This is so cool!!!",
+        "holy shiettt!! I want onee!!!"
+      ]
     },
     {
       "id": 2,
@@ -58,9 +61,7 @@
       "gear_ratio": "direct",
       "top_speed": "32",
       "likes": 0,
-      "comment": [
-        "test"
-      ]
+      "comment": []
     },
     {
       "id": 7,
@@ -70,10 +71,7 @@
       "gear_ratio": "15-58",
       "top_speed": "25",
       "likes": 0,
-      "comment": [
-        "test",
-        "test"
-      ]
+      "comment": []
     },
     {
       "image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/original/4X/a/3/c/a3c0f28eb22705265520a828d47d5e6a2988f981.jpeg",
@@ -82,9 +80,7 @@
       "gear_ratio": "15-36",
       "top_speed": "40",
       "likes": 0,
-      "comment": [
-        "test"
-      ],
+      "comment": [],
       "id": 8
     }
   ]

@@ -22,8 +22,7 @@ function EboardPost({eboard, deletePost, URL}) {
 
     function addComment(e) {
         e.preventDefault();
-        eboard.comment.push(commentInput)
-    
+        
         fetch(URL + `${eboard.id}`, {
             method: "PATCH",
             headers: {
@@ -31,23 +30,26 @@ function EboardPost({eboard, deletePost, URL}) {
                 "Accept": "application/json"
             },
             body: JSON.stringify({
-                comment: eboard.comment
+                comment: [...comments, commentInput]
             })
         }).then(data => data.json())
-        .then(newObj => setComments([...comments, newObj.comment[newObj.comment.length - 1]]))
+        .then(newObj => setComments(newObj.comment))
+        
+        e.target.reset();
     }
 
     return (
         <p className="post">
             <img src={eboard.image} alt={eboard.id} />
-                <ul>
-                    <li>Battery: {eboard.battery}</li>
-                    <li>Motor Size: {eboard.motor}</li>
-                    <li>Gear Ratio: {eboard.gear_ratio}</li>
-                    <li>Top Speed(mph): {eboard.top_speed}</li>
+                <div className="specs">
+                    <p>Battery: {eboard.battery}</p>
+                    <p>Motor Size: {eboard.motor}</p>
+                    <p>Gear Ratio: {eboard.gear_ratio}</p>
+                    <p>Top Speed(mph): {eboard.top_speed}</p>
                     <p>{<button className="like-button" onClick={updateLikes}>Likes: {likes}</button>}</p>
                     <p>{<button className="delete-button" onClick={() => deletePost(eboard.id)}>Hall-of-Fame</button>}</p>
-                </ul>
+                </div>
+                <span className="displayed-comments">Comments:</span>
                 <div>
                     {comments.map(comment => {
                         return <li>{comment}</li>

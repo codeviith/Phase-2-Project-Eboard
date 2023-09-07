@@ -3,6 +3,7 @@ import EboardsList from "./EboardsList";
 import NewEboardsForm from "./NewEboardsForm";
 import Search from "./Search";
 import { Switch, Route } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const URL = "http://127.0.0.1:7000/eboards/"
 
@@ -62,6 +63,7 @@ function EboardsPage() {
 
     return (
         <main>
+            <NavBar/>
             <Switch>
                 <Route exact path="/">
                     <EboardsList eboards={eboards}
