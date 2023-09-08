@@ -43,7 +43,7 @@ function NewEboardsForm({addNewEboards}) {
                     <input onChange={updateFormData} value={formData.top_speed} type="number" name="top_speed" placeholder="Top Speed Here" />
                 </div>
                 <div className="submit-button">
-                    <button type="submit" value="Add Eboard">Add New Eboard</button>
+                    <button type="submit" value="Add Eboard">Submit Post</button>
                 </div>
             </form>
         </div>

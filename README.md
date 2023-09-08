@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Eboard Central
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+<li>This site is where you can showcase your DIY Eboard</li>
 
-### `npm start`
+<li>It allows you to post a photo of your build and enter in your specs</li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<li>It will show you all the posts from other users and you have the option to 'like' or 'Hall-of-Fame' the post</li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<li>It also allows you to search the existing posts based off the specs and post comments</li>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+<li>Run 'npm install'</li>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>Run 'npm run server'</li>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<li>Run 'npm start'</li>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instructions
 
-### `npm run eject`
+<li>To view the list of posts, click on 'Home'</li>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<li>To search through the list for a specific post, click on 'Search' and search by specs</li>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<li>To 'like' a post, click on the green 'like' button</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<li>To send a post to the 'Hall-of-Fame', click on the purple 'Hall-of-Fame' button</li>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<li>To add a new post, click on 'Add Post' and click on 'Submit Post' button</li>
 
-## Learn More
+## References
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li>https://forum.esk8.news/</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<li>https://electric-skateboard.builders/</li>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
