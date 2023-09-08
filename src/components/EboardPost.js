@@ -53,8 +53,8 @@ function EboardPost({eboard, deletePost, URL}) {
                     <p>{<button className="like-button" onClick={updateLikes}>Likes: {likes}</button>}</p>
                     <p>{<button className="delete-button" onClick={() => deletePost(eboard.id)}>Hall-of-Fame</button>}</p>
                 </div>
-                <span className="displayed-comments">Comments:</span>
-                <div>
+                <span className="comment-section">Comments:</span>
+                <div className="displayed-comments">
                     {comments.map(comment => {
                         return <li>{comment}</li>
                     })}

@@ -5,6 +5,7 @@ import Search from "./Search";
 import Intro from "./Intro";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
+import HallOfFame from "./HallOfFame";
 
 const URL = "http://127.0.0.1:7000/eboards/"
 
@@ -72,6 +73,9 @@ function EboardsPage() {
                     deletePost={deletePost}
                     URL={URL}
                     />
+                </Route>
+                <Route path="/HallOfFame">
+                    <HallOfFame />
                 </Route>
                 <Route path="/Search">
                     <Search query={query}

@@ -4,10 +4,10 @@
       "id": 1,
       "image": "./pics/ID1.jpg",
       "battery": "10s3p",
-      "motor": "5364 190kv",
+      "motor": "5064 190kv",
       "gear_ratio": "15-36",
       "top_speed": "22",
-      "likes": 0,
+      "likes": 9,
       "comment": [
         "This is so cool!!!",
         "holy shiettt!! I want onee!!!"
@@ -17,10 +17,10 @@
       "id": 2,
       "image": "./pics/ID2.jpeg",
       "battery": "12s3p",
-      "motor": "5364 190kv",
+      "motor": "5064 190kv",
       "gear_ratio": "15-38",
       "top_speed": "30",
-      "likes": 0,
+      "likes": 2,
       "comment": []
     },
     {
@@ -30,8 +30,10 @@
       "motor": "6355 210kv",
       "gear_ratio": "15-48",
       "top_speed": "18",
-      "likes": 0,
-      "comment": []
+      "likes": 7,
+      "comment": [
+        "How much?!???"
+      ]
     },
     {
       "id": 4,
@@ -40,8 +42,10 @@
       "motor": "6364 190kv",
       "gear_ratio": "14-56",
       "top_speed": "28",
-      "likes": 0,
-      "comment": []
+      "likes": 7,
+      "comment": [
+        "what a clean build nicely done!"
+      ]
     },
     {
       "id": 5,
@@ -50,7 +54,7 @@
       "motor": "6374 190kv",
       "gear_ratio": "15-58",
       "top_speed": "27",
-      "likes": 0,
+      "likes": 6,
       "comment": []
     },
     {
@@ -60,8 +64,10 @@
       "motor": "6384 170kv",
       "gear_ratio": "direct",
       "top_speed": "32",
-      "likes": 0,
-      "comment": []
+      "likes": 2,
+      "comment": [
+        "dayum son, direct drive now THATS what im tlaking about."
+      ]
     },
     {
       "id": 7,
@@ -70,18 +76,12 @@
       "motor": "6364 190kv",
       "gear_ratio": "15-58",
       "top_speed": "25",
-      "likes": 0,
-      "comment": []
-    },
-    {
-      "image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/original/4X/a/3/c/a3c0f28eb22705265520a828d47d5e6a2988f981.jpeg",
-      "battery": "12s5p",
-      "motor": "6384 150kv",
-      "gear_ratio": "15-36",
-      "top_speed": "40",
-      "likes": 0,
-      "comment": [],
-      "id": 8
+      "likes": 21,
+      "comment": [
+        "this is sooo sickkkk!!",
+        "dayum look at those wheels good shit!",
+        "TAKE MY MONEY!!!!!!!💰💰💰💰💰💰"
+      ]
     }
   ]
 }

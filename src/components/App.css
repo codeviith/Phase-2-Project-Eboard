@@ -5,8 +5,6 @@ body {
   background-position: center;
   background-size: contain;
   background-color: gray;
-  
-  /* rgb(59, 184, 212); */
 }
 
 .header {
@@ -14,6 +12,15 @@ body {
   background-color: orangered;
   font-size: x-large;
   padding: 2px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  background-color: gray;
 }
 
 @media (min-width: 900px) {
@@ -39,28 +46,44 @@ img {
   margin: 15px;
 }
 
-li {
-  font-size: 25px;
-  font-style: oblique;
-  font-family: Comic Sans MS;
-}
-
-.submit_button {
-  margin-left: 0;
-}
-
 .new-eboard-input input {
   display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right:auto;
   width: 45%;
   padding: 10px 12px;
   font-size: 25px;
   font-family: Comic Sans MS;
+  cursor: input;
+}
+
+.upload-image {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-button button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 35px;
+  border-radius: 12px;
+  background-color: darkgray;
+  cursor: pointer;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 65px;
   background-color: gray;
 }
 
@@ -83,7 +106,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 1px; */
+  text-indent: 25px;
+  gap: 2px;
   font-size: 25px;
   font-family: Comic Sans MS;
 }
@@ -92,22 +116,82 @@ p {
   margin: 0; /*!important: this is to give this code priority over other <p> tags*/
 }
 
-.displayed-comments {
-  font-size: 20px;
-  font-family: Comic Sans MS;
+.like-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  padding: 3px;
+  border-radius: 7px;
+  background-color: rgb(95, 227, 95);
+  cursor: pointer;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  padding: 7px;
+  border-radius: 12px;
+  background-color: rgb(176, 64, 204);
+  cursor: pointer;
+}
+
+.comment-section {
+  margin-top: 25px;
   display:flex;
+  flex-direction: column;
+  font-size: x-large;
+  text-indent: 15px;
   text-decoration: underline;
 }
 
-.intro {
-  display: flex;
+.displayed-comments {
+  display:flex;
   flex-direction: column;
-  text-align: center;
-  font-size: 30px;
-  font-style: Calibri;
-  background-color: gray;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  text-indent: 20px;
+  text-align: left;
+  font-style: oblique;
+  font-family: Comic Sans MS;
 }
 
+.comment-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-indent: 20px;
+  width: 86%;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: input;
+}
+
+.comment-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  padding: 7px;
+  border-radius: 12px;
+  background-color: darkgray;
+  cursor: pointer;
+}
 
 .search-bar {
   background-color: gray;
@@ -122,7 +206,72 @@ p {
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  width: 90vw;
+  width: 83vw;
+  cursor: input;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  background-color: gray;
+}
+
+h3 {
+  color: black;
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  background-color: gray;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-family: Comic Sans MS;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style-type: none;
+  text-decoration: underline;
+  background-color: gray;
 }
 
 
+
+
+
+
+
+
+
+.comming-soon {
+  font-size: 80px;
+  font-family: Comic Sans MS;
+  display: flex;
+  justify-content: center;
+  margin-top: 230px;
+}

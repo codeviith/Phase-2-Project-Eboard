@@ -25,18 +25,26 @@ function NewEboardsForm({addNewEboards}) {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
+    function test() {
+        console.log("TEST")
+        alert("TEST")
+    }
+
     return (
         <div className="new-eboard-form">
-            <h2>New Eboard</h2>
+            <h2>New Eboard Post</h2>
             <form onSubmit={submitForm}>
                 <div className="new-eboard-input">
                     <input onChange={updateFormData} value={formData.image} type="text" name="image" placeholder="Image URL Here" />
+                    <button className="upload-image" type="click" onClick={test}>Choose File📁</button>
                     <input onChange={updateFormData} value={formData.battery} type="text" name="battery" placeholder="Battery Specs Here" />
                     <input onChange={updateFormData} value={formData.motor} type="text" name="motor" placeholder="Motor Specs Here" />
                     <input onChange={updateFormData} value={formData.gear_ratio} type="text" name="gear_ratio" placeholder="Gear Ratio Here" />
                     <input onChange={updateFormData} value={formData.top_speed} type="number" name="top_speed" placeholder="Top Speed Here" />
                 </div>
-                <button className="submit_button" type="submit" value="Add Eboard">Add New Eboard</button>        
+                <div className="submit-button">
+                    <button type="submit" value="Add Eboard">Add New Eboard</button>
+                </div>
             </form>
         </div>
     )

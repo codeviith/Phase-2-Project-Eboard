@@ -7,7 +7,7 @@ function Search({query, updateQuery}) {
                 <h3>Search</h3>
             </label>
             <input type="text" className="search-input"
-            placeholder="Search Eboard Here By Spec..."
+            placeholder="Search Eboards Here By Spec..."
             onChange={updateQuery}
             value={query}
             />
