@@ -1,40 +1,17 @@
 {
   "eboards": [
     {
-      "id": 1,
-      "image": "./pics/ID1.jpg",
-      "battery": "10s3p",
-      "motor": "5064 190kv",
-      "gear_ratio": "15-36",
-      "top_speed": "22",
-      "likes": 9,
-      "comment": [
-        "This is so cool!!!",
-        "holy shiettt!! I want onee!!!"
-      ]
-    },
-    {
-      "id": 2,
-      "image": "./pics/ID2.jpeg",
+      "id": 5,
+      "image": "./pics/ID5.jpeg",
       "battery": "12s3p",
-      "motor": "5064 190kv",
-      "gear_ratio": "15-38",
-      "top_speed": "30",
-      "likes": 2,
+      "motor": "6374 190kv",
+      "gear_ratio": "15-58",
+      "top_speed": "27",
+      "likes": 6,
       "comment": []
-    },
-    {
-      "id": 3,
-      "image": "./pics/ID3.jpg",
-      "battery": "10s2p",
-      "motor": "6355 210kv",
-      "gear_ratio": "15-48",
-      "top_speed": "18",
-      "likes": 7,
-      "comment": [
-        "How much?!???"
-      ]
-    },
+    }
+  ],
+  "HallOfFame": [
     {
       "id": 4,
       "image": "./pics/ID4.jpeg",
@@ -48,25 +25,16 @@
       ]
     },
     {
-      "id": 5,
-      "image": "./pics/ID5.jpeg",
-      "battery": "12s3p",
-      "motor": "6374 190kv",
-      "gear_ratio": "15-58",
-      "top_speed": "27",
-      "likes": 6,
-      "comment": []
-    },
-    {
-      "id": 6,
-      "image": "./pics/ID6.jpeg",
-      "battery": "12s3p",
-      "motor": "6384 170kv",
-      "gear_ratio": "direct",
-      "top_speed": "32",
-      "likes": 2,
+      "id": 1,
+      "image": "./pics/ID1.jpg",
+      "battery": "10s3p",
+      "motor": "5064 190kv",
+      "gear_ratio": "15-36",
+      "top_speed": "22",
+      "likes": 9,
       "comment": [
-        "dayum son, direct drive now THATS what im tlaking about."
+        "This is so cool!!!",
+        "holy shiettt!! I want onee!!!"
       ]
     },
     {
@@ -81,6 +49,18 @@
         "this is sooo sickkkk!!",
         "dayum look at those wheels good shit!",
         "TAKE MY MONEY!!!!!!!💰💰💰💰💰💰"
+      ]
+    },
+    {
+      "id": 6,
+      "image": "./pics/ID6.jpeg",
+      "battery": "12s3p",
+      "motor": "6384 170kv",
+      "gear_ratio": "direct",
+      "top_speed": "32",
+      "likes": 2,
+      "comment": [
+        "dayum son, direct drive now THATS what im tlaking about."
       ]
     }
   ]

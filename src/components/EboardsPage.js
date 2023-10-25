@@ -13,6 +13,7 @@ function EboardsPage() {
 
     const [eboards, setEboards] = useState([])
     const [query, setQuery] = useState("")
+    const [hofBoards, setHofBoards] = useState(null)
 
     useEffect(() => {
         fetch(URL)
@@ -20,6 +21,26 @@ function EboardsPage() {
         .then(eboards => {
             setEboards(eboards);
         })
+    }, [])
+
+    // useEffect(() => {
+    //     fetch("http://127.0.0.1:7000/HallOfFame/")
+    //     .then(data => data.json())
+    //     .then(hofBoards => {
+    //         setHofBoards(hofBoards);
+    //     })
+    // }, [])
+
+
+///Using Asynchonous Method:
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetch("http://127.0.0.1:7000/HallOfFame/")
+            const json = await data.json()
+            setHofBoards(json)
+        } 
+
+        fetchData()
     }, [])
 
     function addNewEboards(newBoards) {
@@ -53,6 +74,25 @@ function EboardsPage() {
         })
     }
 
+
+///Hall of Fame
+
+    function addToHallOfFame(hofBoard) {
+        console.log('inside function')
+        fetch("http://127.0.0.1:7000/HallOfFame/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(hofBoard)
+        }).then(data => data.json())
+        .then(hofBoard => setHofBoards(...hofBoards, hofBoard))
+    }
+
+
+
+
     function updateQuery(e) {
         return setQuery(e.target.value);
     }
@@ -63,6 +103,8 @@ function EboardsPage() {
         (eboard.gear_ratio.includes(query) || eboard.top_speed.includes(query))
     })
 
+    // if (hofBoards.length = 0) return 'loading'
+
     return (
         <main>
             <NavBar/>
@@ -70,18 +112,22 @@ function EboardsPage() {
                 <Route exact path="/">
                     <Intro />
                     <EboardsList eboards={eboards}
+                    addToHallOfFame={addToHallOfFame}
                     deletePost={deletePost}
                     URL={URL}
                     />
                 </Route>
                 <Route path="/HallOfFame">
-                    <HallOfFame />
+                    <HallOfFame hofBoard={hofBoards}/>
+              
                 </Route>
                 <Route path="/Search">
                     <Search query={query}
                     updateQuery={updateQuery}
                     />
-                    <EboardsList eboards={filteredEboards}
+                    <EboardsList 
+                    eboards={filteredEboards}
+                    addToHallOfFame={addToHallOfFame}
                     deletePost={deletePost}
                     URL={URL}
                     />

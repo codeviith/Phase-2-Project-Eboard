@@ -1,10 +1,15 @@
 import React from "react";
+import EboardPost from "./EboardPost";
 
-function HallOfFame() {
+function HallOfFame({hofBoard}) {
+console.log(hofBoard)
+
     return (
         <div>
             <h4>Hall-of-Fame</h4>
-            <span className="comming-soon">FEATURE COMING SOON!</span>
+            {hofBoard.map(hofPost => {
+            return <EboardPost key={hofPost.id} eboard={hofPost}/>
+            })}
         </div>
     )
 }

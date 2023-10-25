@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function EboardPost({eboard, deletePost, URL}) {
+function EboardPost({eboard, deletePost, addToHallOfFame, URL}) {
     const [likes, setLikes] = useState(eboard.likes)
     const [comments, setComments] = useState(eboard.comment)
     const [commentInput, setCommentInput] = useState("")
@@ -41,6 +41,11 @@ function EboardPost({eboard, deletePost, URL}) {
     function resetCommentInput(e) {
         e.target.reset();
     }
+    function handleClick() {
+        addToHallOfFame(eboard)
+        deletePost(eboard.id)
+    }
+
 
     return (
         <p className="post">
@@ -51,7 +56,7 @@ function EboardPost({eboard, deletePost, URL}) {
                     <p>Gear Ratio: {eboard.gear_ratio}</p>
                     <p>Top Speed(mph): {eboard.top_speed}</p>
                     <p>{<button className="like-button" onClick={updateLikes}>Likes: {likes}</button>}</p>
-                    <p>{<button className="delete-button" onClick={() => deletePost(eboard.id)}>Hall-of-Fame</button>}</p>
+                    <p>{<button className="delete-button" onClick={handleClick}>Hall-of-Fame</button>}</p>
                 </div>
                 <span className="comment-section">Comments:</span>
                 <div className="displayed-comments">
