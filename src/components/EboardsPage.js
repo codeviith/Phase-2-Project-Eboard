@@ -119,7 +119,7 @@ function EboardsPage() {
                 </Route>
                 <Route path="/HallOfFame">
                     <HallOfFame hofBoard={hofBoards}/>
-              
+
                 </Route>
                 <Route path="/Search">
                     <Search query={query}
